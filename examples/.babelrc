@@ -1,0 +1,29 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2"
+  ],
+  "plugins": ["transform-vue-jsx", "transform-runtime", [
+    "component",
+    {
+      "libraryName": "element-cy",
+      "style": true,
+      "styleLibrary": {
+        "name": "theme-chalk/lib/", // same with styleLibraryName
+        "path": "[module].css",  // the style path. e.g. module Alert =>  alert/index.css
+      },
+      "libDir": "src/components"
+    }
+  ]],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": ["transform-vue-jsx", "transform-es2015-modules-commonjs", "dynamic-import-node"]
+    }
+  }
+}

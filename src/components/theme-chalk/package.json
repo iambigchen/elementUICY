@@ -1,0 +1,20 @@
+{
+  "name": "element-thene-chale-cy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.css",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
