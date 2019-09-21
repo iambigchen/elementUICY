@@ -21,3 +21,15 @@ $--breakpoints: (
   float: left;
   box-sizing: border-box;
 }
+
+/* Header
+  --------------------------*/
+  $--header-padding: 0 20px !default;
+
+  /* Footer
+  --------------------------*/
+  $--footer-padding: 0 20px !default;
+  
+  /* Main
+  --------------------------*/
+  $--main-padding: 20px !default;

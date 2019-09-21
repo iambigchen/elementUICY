@@ -3,12 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import {col, row} from 'element-cy'
+import {col, row, container, header, main, footer, aside} from 'element-cy'
 
 Vue.config.productionTip = false
 
 Vue.use(col)
 Vue.use(row)
+Vue.use(container)
+Vue.use(header)
+Vue.use(main)
+Vue.use(footer)
+Vue.use(aside)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
