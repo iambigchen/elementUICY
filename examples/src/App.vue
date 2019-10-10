@@ -16,6 +16,7 @@
     </el-row>
     <el-row>
       <router-link to="/container">container</router-link>
+      <router-link to="/icon">icon</router-link>
     </el-row>
     <el-row>
       <router-view></router-view>

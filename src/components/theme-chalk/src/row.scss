@@ -1,4 +1,4 @@
-@import '../minxin/minxin.scss';
+@import 'minxin/minxin.scss';
 
 
 @include b(row) {
@@ -6,12 +6,12 @@
   box-sizing: border-box;
   @include utils-clearfix;
 
-  @include m(flex) { 
+  @include m(flex) {  
     display: flex;
-    &:before,
+    &:before, 
     &:after {
-      display: none;
-    }
+      display: none; 
+    } 
 
     @include when(justify-center) {
       justify-content: center;

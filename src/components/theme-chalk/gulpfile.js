@@ -9,7 +9,16 @@ function compile() {
     .pipe(sass.sync())
     .pipe(cssmin())
     .pipe(dest('./lib'));
+    src('./src/fonts/**')
+    .pipe(cssmin())
+    .pipe(dest('./lib/fonts'));
   })
 }
-
+function copyfont() {
+  return watch('./**/*.scss', function() {
+    src('./src/fonts/**')
+    .pipe(cssmin())
+    .pipe(dest('./lib/fonts'));
+  })
+}
 exports.build = series(compile);

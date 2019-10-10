@@ -1,5 +1,5 @@
-@import '../common/var.scss';
-@import '../minxin/minxin.scss';
+@import 'common/var.scss';
+@import 'minxin/minxin.scss';
 
 @include b(container) {
   display: flex;
@@ -10,5 +10,5 @@
   min-width: 0;
   @include when(vertical) {
     flex-direction: column;
-  }
+  } 
 }
